@@ -150,6 +150,10 @@ nav {
 	width: 100%;
 }
 
+.topic span {
+	font-weight: bold;
+}
+
 /* Footer */
 footer {
 	display: grid;
