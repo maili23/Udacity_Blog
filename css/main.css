@@ -1,147 +1,258 @@
 html {
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
+	box-sizing: border-box;
+	color: #333;
 }
 
 body {
-  /* height: 100vh; */
-  margin: 30px 50px;
-  line-height: 1.4;
+	background-color: #ccc;
+	margin: 30px 150px;
+	line-height: 1.4;
 }
 
-.container {
-  display: grid;
-  grid-gap: 20px;
+a {
+	text-decoration: none;
+	color: #333;
 }
 
-img {
-  max-width: 100%;
+/* Blog Title */
+header {
+	display: grid;
+	padding: 0;
+	grid-template-rows: 1fr;
+}
+
+header h1 {
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+	font-size: 5rem;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 /* Navigation */
-.main-nav ul {
-  display: grid;
-  grid-gap: 20px;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: repeat(4, 1fr);
+nav {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-self: center;
+	font-size: 1.3rem;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
 }
 
-.main-nav a {
-  background: #162d62;
-  display: block;
-  text-decoration: none;
-  padding: 0.8rem;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  border-radius: 15px;
+.nav-left, .nav-mid, .nav-right {
+	font-family: 'Bebas Neue', cursive;
+	align-self: center;
+	margin: 0;
 }
 
-.main-nav a:hover {
-  background: #efd50d;
-  color: #162d62;
+.nav-left {
 }
 
-/* Naming and Icons */
-.showname {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-  "title title skiing snowboard icehockey";
+.nav-mid {
+	text-align: center;
 }
 
-/* Title */
-.title {
-  grid-area: title;
-  max-height: 400px;
-  min-width: 330px;
-  background: #afc6fb;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  border-radius: 25px;
+.nav-right {
+	text-align: right;
 }
 
-.title h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0;
+/* Main Headline */
+.main-head {
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
-.title h2 {
-  font-size: 1.5em;
-  margin-bottom: 0;
-  font-weight: bold;
+.main-head h2 {
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	font-size: 4.5rem;
+	margin: 10px 0;
 }
 
-.title p {
-  margin-bottom: 0;
+/* Top Container */
+.top-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	"showcase showcase top-text";
 }
 
-.title a {
-  color: #fff;
-  text-decoration: none;
+.showcase {
+	grid-area: showcase;
+	min-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	color: #fff;
+	background: url(../img/private-road.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-.title a:hover {
-  color: #162d62;
-}
+/* .showcase img {
+	max-width: 800px;
+} */
 
-/* Sports */
-.sports {
-  background: #89a0d5;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  padding: 1.5rem;
-  border-radius: 25px;
-}
-
-.sports h4 {
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-.skiing {
-  grid-area: skiing;
-  justify-content: center;
-}
-
-.skiing img {
-  max-width: 120px;
-}
-
-.snowboard {
-  grid-area: snowboard;
-}
-
-.snowboard img {
-  max-width: 120px;
-}
-
-.icehockey {
-  grid-area: icehockey;
-}
-
-.icehockey img {
-  max-width: 120px;
+.showcase p {
+	font-family: 'Source Serif Pro', serif;
+	margin: 0;
+	font-size: 0.8rem;
 }
 
 
+.top-text {
+	grid-area: top-text;
+	display: grid;
 
+}
 
+.top-text p {
+	font-family: 'Source Serif Pro', serif;
+	margin: 0;
+	text-align: justify;
+}
 
+/* Short News */
+.news-heading {
+	display: grid;
+	grid-template-columns: 1fr;
+}
 
+.news-heading h3 {
+	font-family: 'Source Serif Pro', serif;
+	text-align: center;
+	font-size: 2rem;
+	margin: 25px 0;
+}
 
+.short-news {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
+.topic {
+	font-family: 'Source Serif Pro', serif;
+	text-align: justify;
+}
+
+.topic p {
+	margin: 0;
+	text-indent: 50px;
+}
+
+.topic h4 {
+	margin: 10px 0;
+}
+
+.topic img {
+	width: 100%;
+}
+
+.topic span {
+	font-weight: bold;
+}
+
+/* Footer */
 footer {
-  background: #9fc53a;
-  border-radius: 15px;
-  padding: 0 3rem;
+	display: grid;
+	grid-template-columns: 1fr;	
+}
+
+footer p {
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	font-size: 1.5rem;
+	word-spacing: 3px;
+	letter-spacing: 2px;
+	margin-top: 48px;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+}
+
+/* Media Queries*/
+@media (max-width:960px) {
+	.main-head h2 {
+		font-size: 3rem;
+	}
+	.top-text p {
+		font-size: 0.9rem;
+	}
+	.top-container {
+		grid-template-areas:
+		"showcase"
+		"top-text";
+	}
+
+	.showcase {
+		min-height: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	header h1  {
+		font-size: 4rem;
+	}
+
+	nav {
+		font-size: 1.1rem;
+		border-top: 1px solid #333;
+		border-bottom: 1px solid #333;
+	}
+
+	.main-head h2 {
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		margin: 30px 50px;
+	}
+
+	header h1  {
+		font-size: 2rem;
+	}
+
+	nav {
+		font-size: 0.7rem;
+		border-top: 1px solid #333;
+		border-bottom: 1px solid #333;
+	}
+
+	.main-head h2 {
+		font-size: 1.5rem;
+	}
+
+	.showcase {
+		min-width: 275px;
+	}
+
+	.showcase p {
+		font-size: 0.5rem;
+	}
+
+	.news-heading h3 {
+		font-size: 1.5rem;
+	}
+
+	.top-text p {
+		font-size: 0.7rem;
+	}
+
+	.topic p {
+		font-size: 0.7rem;
+	}
+
+	.topic h4 {
+		font-size: .9rem;
+	}
+
+	footer p {
+		font-size: 1.1rem;
+	}
+
 }
 
 
@@ -149,31 +260,32 @@ footer {
 
 
 
-/*
-.name {
-  grid-area:  name;
-  background: #89a0d5;
-}
 
-h1 {
-  color: white;
-  font-size: 4em;
-  padding: 0 2em 0 2em;
-  text-align: justify;
-}
 
-.icon {
-  grid-area: icon;
-  background: #afc6fb;
-}
 
-section.gal {
-  grid-area: gal;
-  background: #ffff73;
-}
 
-footer {
-  grid-area: footer;
-  background: #9fc53a;
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

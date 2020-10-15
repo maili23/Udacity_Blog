@@ -1,0 +1,95 @@
+/* Media Queries*/
+@media (max-width: 1050px) {
+	body {
+		margin: 15px 80px;
+	}
+
+	.hero-container h1 {
+		font-size: 3rem;
+	}
+
+	.box p {
+		font-size: .8rem;
+	}
+
+	.box h2 {
+		font-size: 1.1rem;
+		margin: 5px 0;
+	}
+
+	.box-footer a {
+		font-size: .8rem;
+	}
+
+	.box-button a {
+		padding: 0;
+	}
+
+	.newsletter h2 {
+		font-size: 1.6rem;
+	}
+
+	.newsletter p {
+		font-size: 1.3rem;
+	}
+
+	.news-input {
+		min-width: 150px;
+	}
+}
+
+@media (max-width: 850px) {
+	body {
+		margin: 15px 30px;
+	}
+
+	.hero-container {
+	min-height: 350px;
+	margin-bottom: 20px;
+	}
+
+	.boxes {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.newsletter {
+		padding: 1rem;
+		margin: 0;
+	}
+
+	.newsletter > h2 {
+		margin-bottom: 0;
+	}
+
+	.news-input-btn {
+		margin: 0;
+	}
+
+	.btn-news {
+		font-size: 1rem;
+		padding: .9rem;
+	}
+
+	.footer-left > h4 {
+		font-size: 1.1rem;
+	}
+
+	.footer-left p {
+		font-size: .9rem;
+	}
+
+	.footer-bottom {
+		font-size: .8rem;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		margin: 0;
+	}
+
+	.boxes {
+	grid-template-columns: 1fr;
+	margin-bottom: 20px;
+	}
+}
